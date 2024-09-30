@@ -19,7 +19,7 @@ Features:
 
 ## Project Structure
 ```
-telegram-mini-app/
+twa-in-100-lines/
 ├── public/
 │   └── ...
 ├── src/
