@@ -176,6 +176,23 @@ Treat TG Web Apps like what it is: a web app. Now, if you are indeed using impor
 - After testing locally, make sure to change it back to your deployed URL link.   
 NOTE: on some ngrok instances, you might run into the scenario where the WebApp variable/sdk might cause issues during local dev't especially when observing it through a desktop browser. Try to do local dev't inside the TG messaging app as much as possible.
 
+## Other Notes
+Here are some essential properties and methods of the `WebApp` object that you should be familiar with:
+
+- **`ready()`**: Notifies the Telegram app that the Mini App has finished loading and is ready to be displayed. It's recommended to call this method as early as possible, ideally right after all critical interface elements have loaded.
+
+- **`close()`**: Closes the Mini App programmatically.
+
+- **`expand()`**: Expands the Mini App to the maximum available height. To determine if the app is currently expanded, you can check the `WebApp.isExpanded` property.
+
+- **`enableClosingConfirmation()`**: Displays a confirmation dialog when the user attempts to close the Mini App, asking them to confirm the action.
+
+- **`platform`**: Returns a string indicating the Telegram platform the user is currently using (e.g., "ios", "android", "desktop").
+
+- **`initData`**: Provides a string containing raw initialization data received from Telegram.
+
+- **`initDataUnsafe`**: Offers an object with parsed user data extracted from `initData`, making it easier to access user information like `user.id`, `user.first_name`, etc.
+
 ## Resources
 - https://blog.octalabs.com/a-beginners-guide-to-telegram-mini-apps-a201cd9d7510
 - https://blog.octalabs.com/clicker-app-telegram-mini-apps-part-2-63bbdcf55589
