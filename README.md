@@ -1,5 +1,5 @@
-## Telegram Mini App in 100 Lines (or less)
-Build a simple Telegram Mini App with a clicker/counter functionality using React, TypeScript, and the Telegram Web Apps SDK (@twa-dev/sdk), all within approximately 100 lines of code.
+## Telegram Mini App in 100 Lines 
+Build a simple Telegram Mini App with a clicker/counter functionality using React, TypeScript, and the Telegram Web Apps SDK (@twa-dev/sdk)
 
 This guide will walk you through creating the app, testing it locally using Ngrok, and deploying it.
 
