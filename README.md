@@ -18,24 +18,23 @@ Features:
 - Allows the user to close the app.
 
 ## Project Structure
-```
-twa-in-100-lines/
-├── public/
-│   └── ...
-├── src/
-│   ├── App.css
-│   ├── App.tsx
-│   ├── index.tsx
-│   └── react-app-env.d.ts
-├── package.json
-├── tsconfig.json
-└── README.md
-└── ...
 
-```
+    twa-in-100-lines/
+    ├── public/
+    │   └── ...
+    ├── src/
+    │   ├── App.css
+    │   ├── App.tsx
+    │   ├── index.tsx
+    │   └── react-app-env.d.ts
+    ├── package.json
+    ├── tsconfig.json
+    └── README.md
+    └── ...
 
 ### `index.tsx`
-```
+
+```typescript
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -60,7 +59,8 @@ document.head.appendChild(script);
 ```
 
 ### `App.tsx`
-```
+
+```typescript
 // src/App.tsx
 import React, { useEffect, useState } from 'react';
 import WebApp from '@twa-dev/sdk';
@@ -166,10 +166,8 @@ Simply follow the following steps:
 7. Bot Settings > Menu Button > Configure menu button > DEPLOYED_URL_LINK
 8. 🔥 You're finally set! Just navigate to your bot to start interacting.
 
-
 ## Test the App Locally Using Ngrok
 Treat TG Web Apps like what it is: a web app. Now, if you are indeed using important TG API SDK data, you can still test your web app locally inside the Telegram Messaging app using this way:
-
 
 - If you haven't installed Ngrok: Sign up at ngrok.com and follow the installation instructions.
 - Run two terminals: (1) run `npm start` to initiate the web app and (2) `ngrok http 3000` (3000 assumes your web locally runs on port 3000) to initiate the web forwarding process.
@@ -178,12 +176,8 @@ Treat TG Web Apps like what it is: a web app. Now, if you are indeed using impor
 - After testing locally, make sure to change it back to your deployed URL link.   
 NOTE: on some ngrok instances, you might run into the scenario where the WebApp variable/sdk might cause issues during local dev't especially when observing it through a desktop browser. Try to do local dev't inside the TG messaging app as much as possible.
 
-
-
-
 ## Resources
 - https://blog.octalabs.com/a-beginners-guide-to-telegram-mini-apps-a201cd9d7510
 - https://blog.octalabs.com/clicker-app-telegram-mini-apps-part-2-63bbdcf55589
 - https://stackoverflow.com/questions/78887200/running-telegram-mini-app-web-app-on-localhost
 - https://github.com/twa-dev/SDK
-
